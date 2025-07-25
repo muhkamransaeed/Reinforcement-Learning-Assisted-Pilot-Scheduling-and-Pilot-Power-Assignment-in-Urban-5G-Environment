@@ -18,6 +18,8 @@ PilotPowerCost: Energy or power consumed to transmit pilot signals.
 NMSEPenalty: Normalized Mean Squared Error; higher error leads to a greater penalty.
 
 α,β,γ: Tunable coefficients to balance the trade-offs between throughput, overhead, power, and estimation accuracy
+
+![Result](utils/Result.png)
 # Key Features
 o Adaptive Pilot Scheduling: Pilots are transmitted only when needed, reducing unnecessary overhead.
 
