@@ -19,7 +19,7 @@ NMSEPenalty: Normalized Mean Squared Error; higher error leads to a greater pena
 
 α,β,γ: Tunable coefficients to balance the trade-offs between throughput, overhead, power, and estimation accuracy
 
-![Result](utils/Result.png)
+![Result]([utils/Result.png](https://github.com/muhkamransaeed/Reinforcement-Learning-Assisted-Pilot-Scheduling-and-Pilot-Power-Assignment-in-Urban-5G-Environment/blob/main/Utils/Result.png))
 # Key Features
 o Adaptive Pilot Scheduling: Pilots are transmitted only when needed, reducing unnecessary overhead.
 
