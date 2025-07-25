@@ -5,6 +5,19 @@ This project simulates an adaptive pilot transmission mechanism for wireless com
 # Objective
 The simulation aims to minimize the channel estimation error (NMSE) while efficiently utilizing pilot signals. Instead of transmitting pilots at every interval, the system dynamically decides when to send a pilot and adjusts the pilot power based on the current NMSE.
 
+# Reward Function
+We define the reward at each timestep as 
+reward = throughput - alpha * pilot_overhead - beta * pilot_power_cost - gamma * nmse_penalty
+
+Throughput: System throughput achieved at time.
+
+PilotOverhead: Cost due to time or bandwidth consumed by pilot signals.
+
+PilotPowerCost: Energy or power consumed to transmit pilot signals.
+
+NMSEPenalty: Normalized Mean Squared Error; higher error leads to a greater penalty.
+
+α,β,γ: Tunable coefficients to balance the trade-offs between throughput, overhead, power, and estimation accuracy
 # Key Features
 o Adaptive Pilot Scheduling: Pilots are transmitted only when needed, reducing unnecessary overhead.
 
@@ -29,3 +42,5 @@ Mobility-aware optimization in wireless networks.
 Reinforcement Learning (RL)-based adaptive pilot scheduling.
 
 Energy vs. accuracy trade-offs in Massive MIMO systems.
+
+.
